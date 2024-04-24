@@ -17,14 +17,19 @@ for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
 done
 ```
 
-3. Use vi
+3. Set Zsh as your default shell:
+```
+chsh -s /bin/zsh
+```
+
+4. Use vi
 ```
 $ vi ~/.zshrc
 export EDITOR='vi'
 export VISUAL='vi'
 ```
 
-4. Change Theme
+5. Change Theme
 ```
 $ vi ~/.zpreztorc
 zstyle ':prezto:module:prompt' theme 'pure'
